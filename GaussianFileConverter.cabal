@@ -1,0 +1,74 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           GaussianFileConverter
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/GaussianFileConverter#readme>
+homepage:       https://github.com/githubuser/GaussianFileConverter#readme
+bug-reports:    https://github.com/githubuser/GaussianFileConverter/issues
+author:         Stanislav S. Bachurin
+maintainer:     bachurin.rostgmu@gmail.com
+copyright:      2022 S.S. Bachurin
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/GaussianFileConverter
+
+library
+  exposed-modules:
+      Library
+      ParserG
+      ParserN
+  other-modules:
+      Paths_GaussianFileConverter
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , directory >=1.3.6.2
+    , filepath >=1.4.2.1
+    , mtl >=2.2.2
+    , split >=0.2.3.4
+  default-language: Haskell2010
+
+executable GaussianFileConverter-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_GaussianFileConverter
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      GaussianFileConverter
+    , base >=4.7 && <5
+    , directory >=1.3.6.2
+    , filepath >=1.4.2.1
+    , mtl >=2.2.2
+    , split >=0.2.3.4
+  default-language: Haskell2010
+
+test-suite GaussianFileConverter-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_GaussianFileConverter
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      GaussianFileConverter
+    , base >=4.7 && <5
+    , directory >=1.3.6.2
+    , filepath >=1.4.2.1
+    , mtl >=2.2.2
+    , split >=0.2.3.4
+  default-language: Haskell2010
