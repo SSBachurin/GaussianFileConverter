@@ -65,4 +65,4 @@ all .gjf files in current directory.
 
 Other platform users:
 
-I don't test it yet on Linux platform, please try to perform the same steps as Windows user. 
+I haven't tested it yet on Linux platform, please try to perform the same steps as Windows user. 
