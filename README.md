@@ -53,7 +53,8 @@ Moreower if script cann't find apropriate replacement in the FF-library - corres
 replaced. You should manualy check notation of these atoms, make the corrections and feed input file again.
 
 ## Usage
-###Windows users:
+
+Windows users:
 
 1. Place GaussianConverter.exe in folder with force field library file (.lib) and .gjf files, formatted as above.
 2. Launch PowerShell in the same folder and write ./GaussianConverter.exe -ff {ffLibName.lib}
@@ -62,5 +63,6 @@ all .gjf files in current directory.
 4. Find files converted_{filename.gjf} and check their content.
 5. Good luck in your further work.
 
-###Other platform users:
+Other platform users:
+
 I don't test it yet on Linux platform, please try to perform the same steps as Windows user. 
