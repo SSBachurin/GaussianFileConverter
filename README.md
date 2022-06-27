@@ -15,12 +15,12 @@ So I writed a Haskell project which take Gaussian Input files (.gjf) with PDB in
 
 %nprocshared=56
 %mem=10GB
-# opt pm6 geom=connectivity
+\# opt pm6 geom=connectivity
 
 Title Card Required
 
 0 1
- H(PDBName=H5',ResName=DA,ResNum=1_A)                 0  -10.03800000   -1.70400000   -1.56300000 L
+ H(PDBName=H5',ResName=DA,ResNum=1_A)                 0  -10.03800000   -1.70400000   -1.56300000 L \n
  O(PDBName=O5',ResName=DA,ResNum=1_A)                 0   -9.22900000   -1.73000000   -1.04200000 L
  C(PDBName=C5',ResName=DA,ResNum=1_A)                 0   -9.24700000   -2.87600000   -0.20600000 L
  H(PDBName=H5',ResName=DA,ResNum=1_A)                0  -10.08000000   -2.79600000    0.49300000 L
